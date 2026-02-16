@@ -53,3 +53,6 @@ Errors:
 |-> SyntaxError: The structure of the code is invalid.
 |-> TypeError: An operation is being applied to variables of the wrong type.
 |-> ValueError: A function or operation has received a value of the wrong type.
+
+
+# Need to reformat! #
