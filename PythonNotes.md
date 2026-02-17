@@ -17,6 +17,19 @@ Variables:
 - Case-sensitive (age, Age, AGE are different)  
 - Cannot use reserved keywords (e.g. for, if, class, True)  
 
+Types of variables:  
+- int → whole numbers (5)  
+- float → decimals (3.14)  
+- str → text ("hello")  
+- bool → True / False  (must be capital)  
+|-> 0 = false, 1 = True  
+|-> print(int(True)) -> 1  
+|-> print(bool(0)) -> False  
+- list → ordered collection ([1, 2, 3])  
+- tuple → unchangeable list ((1, 2, 3))  
+- dict → key–value pairs ({"a": 1})  
+- set → unordered unique values ({1, 2, 3})  
+  
 Displaying 2 different variable together:  
 - print(f"Weight: {weight_text}")  
 |-> Concatenation, must have the 'f' before the quote in order to join 2 variables to print. this text joins the text "Weight: " with the variable {weight_text}.  
