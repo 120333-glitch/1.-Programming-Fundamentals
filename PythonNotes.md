@@ -51,6 +51,9 @@ Formatting Data:
 |-> You can also do it for multiple varaibles by listing then in format in the order they are printed
 	print('1/3 is approximately {:.2f}'.format(1/3))  
 |-> The {:.2f} means... ':' → starts the formatting instructions, '.2' → means 2 decimal places, 'f' → means fixed-point (decimal) for. *ALSO MAKE SURE ITS FLOAT VAR*  
+number = float(input("Enter a number: "))  
+print("{}".format(round(number)))  
+|-> You can use the inbuilt python 'round' function to round to the nearest whole number.  
 ***
 Errors:
 
