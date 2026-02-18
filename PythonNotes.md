@@ -25,6 +25,7 @@ Types of variables:
 |-> 0 = false, 1 = True  
 |-> print(int(True)) -> 1  
 |-> print(bool(0)) -> False  
+|-> print(x > 3) -> prints a boolean answer
 - list → ordered collection ([1, 2, 3])  
 - tuple → unchangeable list ((1, 2, 3))  
 - dict → key–value pairs ({"a": 1})  
@@ -41,6 +42,7 @@ Arrays:
 |-> e.g. fruits = [0] == apple  
 ***
 Converting Data Types:   
+
 	x = '2'  
 	y = '7'  
 	print(int(x) + int(y))  
@@ -53,6 +55,32 @@ Defining Functions:
 def function_1():  
 	print("function")
 |-> This defines a function that when u write 'function_1()' it will run the code defined at the start.
+***
+Assigning/Checking Data:  
+- x = 2 -> this assign the value of '2' to 'x'.
+- x == 2 -> checks if it has the same value.
+- x =! 2 -> checks if it does not equal to.
+- Also:  'x <= 2' or 'x >= 2' or 'x < 2' or 'x > 2'
+***
+And/Or Statements:  
+- and: both conditions have to be True to evaluate as True  
+- or: only one condition has to be True to evaluate as True
+***
+If/Else/Elif:  
+- if is a keyword  
+- The condition must evaluate to either True or False  
+- The code inside the if statement only executes if the condition is True  
+- ':' is placed at the end of the condition  
+- The code inside the if statement must be indented. The indentation defines the code block. This allows you to put multiple lines inside the if statement. The indentation can be done using tab or spaces, as long as you're consistent!  
+- Don't forget the colon ':' at the end of the if/else/elif statement.  
+
+  if condition:  
+		code you execute if condition is true  
+  else:  
+		code you execute if condition is false  
+
+
+
 ***
 Formatting Data:  
 	age = 10  
