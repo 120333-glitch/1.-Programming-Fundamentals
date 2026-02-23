@@ -16,14 +16,14 @@
 - What System and Data modelling tools are there? Context Diagrams, Data flow diagrams, Structure charts, Data dictionary, Storyboard, Decision trees (and tables), Class Diagram.
 
 **Development**: 
-- *NOT COMPLETE*
+- Development is the stage where the solution is coded in a programming language. In the Software Engineering course, Python is specified as the language that will be used in HSC examinations.
 
 **Integration**:
-- *NOT COMPLETE*
+- Once ccode is created and initial testing is performed on the code, it may have to be intergrated with other code that already exists such as existing modules or systems, including older legacy systems. Software may need to connect external databases and API's. Other software applications may need to load Dynamic Link Libraries.
 
 **Testing and debugging**: *NOT COMPLETE*
-- Alpha Vs Beta Testing: *NOT COMPLETE*
-- Levels of Testing: *NOT COMPLETE*
+- Alpha Vs Beta Testing: Alpha testing is testing the final solution by personnel within the software development company prior to the product's release. Whereas, Beta testing is testing the final solution by a limited number of users outside the software development company using real world data and conditions.
+- Levels of Testing: 1 -> Individual subroutine and module. 2-> Ensure modules work together. 3 -> Systems Level: aims to ensure that the hardware, software, data, personnel, and procedures that form the componenets of the final system are are to work together efficiently and correctly.
 - Use of Live Test data: *NOT COMPLETE*
 
 **Installation**:
