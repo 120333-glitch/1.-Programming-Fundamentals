@@ -35,11 +35,26 @@ Displaying 2 different variable together:
 - print(f"Weight: {weight_text}")  
 |-> Concatenation, must have the 'f' before the quote in order to join 2 variables to print. this text joins the text "Weight: " with the variable {weight_text}.  
 ***
-Arrays:  
-- fruits = ["apple" , "banana" , "cherry"]  
+Arrays/Lists:  
+- fruits = ["apple" , "banana" , "cherry", "mango", "kiwi"]  
 |-> This is an array, variable containing multiple variables.  
 |-> They are base 0, meaning the first value is 0, then 1, then 2, etc...  
 |-> e.g. fruits = [0] == apple  
+|-> print(fruits[1:3]) -> this will list all from position 1 to 2  -> it gets up to but doesn't include the 3rd value.  
+|-> print(fruits[:3]) -> this will list from position 0 (start) to 3.  -> it gets up to but doesn't include the 3rd value.  
+|-> print(fruits[3:]) -> this will list from 3 to the end of the list.  it includes the 3rd value and goes onward.
+|-> print(months[-3]) -> you can also print using negative integers (starting from back to front), except the last item on the list will hold the value of -1, not zero.  
+|-> If you try to print a value out of the range it will give you and error.  
+
+
+list1 = ['red', 'green', 'blue']  
+list2 = ['red', 'blue', 'green']  
+print(list1 == list2)  
+    - This prints false because the order of the lists matter.
+  
+
+Tuples:  
+- A tuple is like a list but with a few differences, it cannot be changes after creation and uses () brackets.
 ***
 Converting Data Types:   
 
