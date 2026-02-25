@@ -42,7 +42,7 @@ Arrays/Lists:
 |-> e.g. fruits = [0] == apple  
 |-> print(fruits[1:3]) -> this will list all from position 1 to 2  -> it gets up to but doesn't include the 3rd value.  
 |-> print(fruits[:3]) -> this will list from position 0 (start) to 3.  -> it gets up to but doesn't include the 3rd value.  
-|-> print(fruits[3:]) -> this will list from 3 to the end of the list.  it includes the 3rd value and goes onward.
+|-> print(fruits[3:]) -> this will list from 3 to the end of the list. -> it includes the 3rd value and goes onward.
 |-> print(months[-3]) -> you can also print using negative integers (starting from back to front), except the last item on the list will hold the value of -1, not zero.  
 |-> If you try to print a value out of the range it will give you and error.  
 
