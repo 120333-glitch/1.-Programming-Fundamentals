@@ -103,4 +103,33 @@ Errors:
 |-> TypeError: An operation is being applied to variables of the wrong type.
 |-> ValueError: A function or operation has received a value of the wrong type.
 ***
+Pseudo-code:  
+- Sometimes it can be useful to write algorithms in code form without the syntax of a specific language. We can do this using pseudocode. This is a way of writing code in a format that is easy for a human to read. The exact symbols and keywords may vary depending on the convention you use. 
+|-> e.g.  
+IF condition A THEN  
+    process 1  
+ELSEIF condition B THEN  
+    process 2  
+ELSEIF condition C THEN  
+    process 3  
+ELSE  
+    process 4  
+ENDIF  
+<!> make sure to remember the 'ENDIF'
 
+***
+Flowcharts:
+    
+- Flowcharts are used to represent the flow of a program. These diagrams are read from top to bottom and left to right, following the flow of the arrows. There are specific symbols that should be used to indicate specific control structures, as show below:  
+- Process - Rectangle: Used for creating or modifying data within a program, e.g. creating variables or performing calculations.
+- Input/Output - Parallelogram: Used when the program is reading in information (e.g. input()) from the user, or providing the user with information (e.g. print()).
+- Decision - Diamond: Used for conditionals, i.e. if-elif-else statements any time there is a point in the program where we check if something is True or False.
+
+***
+Code Testing:  
+- Input/outputs pairs that are considered 'failing' are when they don't output the correct/intended message.
+- Paths are not singular routes but entire lines (in a flow chart) that it follows to the end. They can diverge to make multiple routes at if/else statements.
+- When testing with boundary values you want to make sure to have a range of inputs that follow every route in order to test every possible output.
+***
+Emojis:  
+- You are able to print emojis, as long as you know their unicode. E.g. print("\U0001f600") -> makes a smiley face, and  print("\U0001f641") -> makes a sad face.
