@@ -45,7 +45,28 @@ Arrays/Lists:
 |-> print(fruits[3:]) -> this will list from 3 to the end of the list. -> it includes the 3rd value and goes onward.
 |-> print(months[-3]) -> you can also print using negative integers (starting from back to front), except the last item on the list will hold the value of -1, not zero.  
 |-> If you try to print a value out of the range it will give you and error.  
-
+-  You can use list.append(item) to add an item to the list, e.g:  
+	animals = ['lion', 'caterpillar', 'elephant']  
+	animals.append('bee')  
+//Then when you print// ['lion', 'caterpillar', 'elephant', 'bee']
+- len(list): Find the number of items in a list  
+- min(list), max(list): Find the minimum/maximum value in a list of numbers
+- sum(list): Calculate the sum of all the values in a list of numbers
+- separator.join(list): join all the elements in a list together with a specified separator.  
+|-> print(', '.join(todo)) -> just becomes a regular list with no [] brackets and commas as the seperator -> Note that .join() can only be used on lists containing strings.)  
+|-> '\n' (a newline character). Makes the spaces between listed items a new line.  
+text = 'Hello World!'  
+print(list(text))  
+|-> This seperates the words into its letters, ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!']  
+text = 'Red Orange Green Blue'  
+print(text.split(' '))
+|-> This seperates the words into their own listed items, ['Red', 'Orange', 'Green', 'Blue']  
+|-> You can also split with more than a comma, e.g. a comma and a space: print(weekdays.split(', '))  
+Example of application -> 'replace' can be used to replace an occurance of text with something else:  
+secret = input("secret message: ")  
+scramble = input("scramble string: ")  
+decoded = secret.replace(scramble, "")  
+print(decoded)  
 
 list1 = ['red', 'green', 'blue']  
 list2 = ['red', 'blue', 'green']  
@@ -54,7 +75,7 @@ print(list1 == list2)
   
 
 Tuples:  
-- A tuple is like a list but with a few differences, it cannot be changes after creation and uses () brackets.
+- A tuple is like a list but with a few differences, it cannot be changed after creation and uses () brackets.
 ***
 Converting Data Types:   
 
@@ -147,4 +168,9 @@ Code Testing:
 - When testing with boundary values you want to make sure to have a range of inputs that follow every route in order to test every possible output.
 ***
 Emojis:  
-- You are able to print emojis, as long as you know their unicode. E.g. print("\U0001f600") -> makes a smiley face, and  print("\U0001f641") -> makes a sad face.
+- You are able to print emojis, as long as you know their unicode. E.g. print("\U0001f600") -> makes a smiley face, and  print("\U0001f641") -> makes a sad face.  
+***
+Loops:  
+- In Python, we can repeat code using loops. There are two types of loops: while loop, for loop  
+- while condition: code that executes while condition is true -> IT DOES NOT LEAVE THE LOOP UNTIL THE WHILE STATEMENT IS TRUE!  
+- 
