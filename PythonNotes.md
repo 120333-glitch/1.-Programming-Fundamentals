@@ -35,11 +35,34 @@ Displaying 2 different variable together:
 - print(f"Weight: {weight_text}")  
 |-> Concatenation, must have the 'f' before the quote in order to join 2 variables to print. this text joins the text "Weight: " with the variable {weight_text}.  
 ***
+- You can import libraries with set codes in them such as 'random' which can generate random numbers, e.g.
+```
+import random
+number = random.randint(1, 100)
+print(number)
+```
+- You can also place these random numbers in list to make random lists, e.g.
+```
+import random
+
+numberlist = []
+n = int(input("How many numbers do you want to generate? "))
+l = int(input("How large do you want the numbers? "))
+for i in range(0,n):
+    rand = random.randint(0, l)
+    numberlist.append(rand)
+print(numberlist)
+```
+***
 Arrays/Lists:  
-- fruits = ["apple" , "banana" , "cherry", "mango", "kiwi"]  
+```
+fruits = ["apple" , "banana" , "cherry", "mango", "kiwi"]  
+```
+- If you want an empty list than just make: fruits = []
 |-> This is an array, variable containing multiple variables.  
 |-> They are base 0, meaning the first value is 0, then 1, then 2, etc...  
 |-> e.g. fruits = [0] == apple  
+|-> I can also set it to: fruits = [i], then, i = 0 and it does that same.  
 |-> print(fruits[1:3]) -> this will list all from position 1 to 2  -> it gets up to but doesn't include the 3rd value.  
 |-> print(fruits[:3]) -> this will list from position 0 (start) to 3.  -> it gets up to but doesn't include the 3rd value.  
 |-> print(fruits[3:]) -> this will list from 3 to the end of the list. -> it includes the 3rd value and goes onward.
@@ -55,41 +78,69 @@ Arrays/Lists:
 - separator.join(list): join all the elements in a list together with a specified separator.  
 |-> print(', '.join(todo)) -> just becomes a regular list with no [] brackets and commas as the seperator -> Note that .join() can only be used on lists containing strings.)  
 |-> '\n' (a newline character). Makes the spaces between listed items a new line.  
+```
 text = 'Hello World!'  
 print(list(text))  
-|-> This seperates the words into its letters, ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!']  
+```
+```
+['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!']  
+```
+|-> This seperates the words into its letters:
+
+```
 text = 'Red Orange Green Blue'  
 print(text.split(' '))
-|-> This seperates the words into their own listed items, ['Red', 'Orange', 'Green', 'Blue']  
+```
+|-> This seperates the words into their own listed items:
+```
+['Red', 'Orange', 'Green', 'Blue']  
+```
 |-> You can also split with more than a comma, e.g. a comma and a space: print(weekdays.split(', '))  
 Example of application -> 'replace' can be used to replace an occurance of text with something else:  
+```
 secret = input("secret message: ")  
 scramble = input("scramble string: ")  
 decoded = secret.replace(scramble, "")  
 print(decoded)  
-
+```
+ - This prints false because the order of the lists matter:
+```
 list1 = ['red', 'green', 'blue']  
 list2 = ['red', 'blue', 'green']  
 print(list1 == list2)  
-    - This prints false because the order of the lists matter.
-  
+```
+- To check if a value is contained within a list we can use 'in' or 'not in' to determine, e.g.
+```
+passwords = ['open sesame', 'password', '12345']
+password = 'invalid'
+while password != 'valid':
+    guess = input("Enter password: ")
+    if guess in passwords:
+        password = 'valid'
+    else:
+        password = 'invalid'
+        print("Not a valid password.")
+print("Welcome back!")
+```
 
 Tuples:  
 - A tuple is like a list but with a few differences, it cannot be changed after creation and uses () brackets.
 ***
 Converting Data Types:   
-
+```
 	x = '2'  
 	y = '7'  
 	print(int(x) + int(y))  
+```
 |-> This converts the data types by adding the brackets and re-specifying.
 	print(float( x + y))  
 |-> This converts what is printed to a different data type.
 ***
 Defining Functions:
-
+```
 def function_1():  
 	print("function")
+```
 |-> This defines a function that when u write 'function_1()' it will run the code defined at the start.
 ***
 Assigning/Checking Data:  
@@ -97,6 +148,7 @@ Assigning/Checking Data:
 - x == 2 -> checks if it has the same value.
 - x =! 2 -> checks if it does not equal to.
 - Also:  'x <= 2' or 'x >= 2' or 'x < 2' or 'x > 2'
+- YOU ALWAYS PUT <,> BEFORE THE EQUALS SIGN!
 ***
 And/Or Statements:  
 - and: both conditions have to be True to evaluate as True  
@@ -109,27 +161,33 @@ If/Else/Elif:
 - ':' is placed at the end of the condition  
 - The code inside the if statement must be indented. The indentation defines the code block. This allows you to put multiple lines inside the if statement. The indentation can be done using tab or spaces, as long as you're consistent!  
 - Don't forget the colon ':' at the end of the if/else/elif statement.  
-
+```
   if condition:  
 		code you execute if condition is true  
   else:  
 		code you execute if condition is false  
-
+```
 
 
 ***
 Formatting Data:  
+```
 	age = 10  
 	print('You are {} years old'.format(age))  
+```
 |-> You cannot print a string with an integer, so you can use format to print them together and {} where you want it to go, make sure to leave a '.' between the text and format.  
+```
 	name = 'Alice'  
 	age = 10  
 	print('Hi {}, you are {} years old'.format(name, age))  
+```
 |-> You can also do it for multiple varaibles by listing then in format in the order they are printed
 	print('1/3 is approximately {:.2f}'.format(1/3))  
 |-> The {:.2f} means... ':' → starts the formatting instructions, '.2' → means 2 decimal places, 'f' → means fixed-point (decimal) for. *ALSO MAKE SURE ITS FLOAT VAR*  
+```
 number = float(input("Enter a number: "))  
 print("{}".format(round(number)))  
+```
 |-> You can use the inbuilt python 'round' function to round to the nearest whole number.  
 ***
 Errors:
@@ -141,7 +199,7 @@ Errors:
 ***
 Pseudo-code:  
 - Sometimes it can be useful to write algorithms in code form without the syntax of a specific language. We can do this using pseudocode. This is a way of writing code in a format that is easy for a human to read. The exact symbols and keywords may vary depending on the convention you use. 
-|-> e.g.  
+```
 IF condition A THEN  
     process 1  
 ELSEIF condition B THEN  
@@ -151,6 +209,7 @@ ELSEIF condition C THEN
 ELSE  
     process 4  
 ENDIF  
+```
 <!> make sure to remember the 'ENDIF'
 
 ***
@@ -173,4 +232,63 @@ Emojis:
 Loops:  
 - In Python, we can repeat code using loops. There are two types of loops: while loop, for loop  
 - while condition: code that executes while condition is true -> IT DOES NOT LEAVE THE LOOP UNTIL THE WHILE STATEMENT IS TRUE!  
-- 
+```
+colours = ['red', 'yellow', 'pink', 'green', 'purple', 'orange', 'blue']  
+print(colours[0])
+```
+- This prints the first (in the 0 place) object from the list.  
+
+```
+i = 0  
+while i < len(colours):  
+	print(colours[i])  
+    i = i + 1  
+```
+- This will go through the entire list and print each colour (remember that all this sentence MUST be in lower case ofr syntax)ntto
+- For loops: 
+```
+for variable in iterable:
+```
+```
+for number in [1, 5, 8, 2]:
+    print(number)
+```
+This code prints:
+```
+1
+5
+8
+2
+```
+- Runs through each number in the list until its complete.
+- You can also modify values to what you print, e.g.
+```
+for value in [3, 1, 4, -2, 3]:
+    print(value + 1)
+```
+- You can also loops through letters e,g.
+```
+for letter in ['A', 'B', 'C']:
+    print(letter)
+```
+- Important note: if you want to print '_/\' you need to write: 
+```
+print("_/\\")
+```
+- This is  because \ is considered the break of the statement so you need to add another to counter-act it.
+- These are the range functions for a set of numbers you select:
+```
+range(end)
+range(start, end)
+range(start, end, step_size)
+```
+- This code prints from 0-4, but not 5 because it ends beofre then:
+```
+for i in range(5):
+    print(i)
+```
+- This code runs through a list of values:
+```
+for i in [0, 1, 2, 3, 4]:
+    print(i)
+```
