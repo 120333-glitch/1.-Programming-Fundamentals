@@ -5,11 +5,11 @@
 ***
 1. Decimal system  
 - Uses 0-9, each position is a power of 10, and its easy for us to understand.  
-- E.g. 964 = (9*10^2) + (6*10^1) + (4*10^0)
+- E.g. 964 = (9 * 10^2) + (6 * 10^1) + (4 * 10^0)
 
 2. Binary system  
  - Decimal is easy for us but bad for computers who us switches -> 0 and 1. Only uses 0 and 1, base 2, each bit represents a power of 2.  
- - E.g. 1011 -> (1*2^3) + (0*2^2) + (1*2^1) + (1*2^0) = 11 (base 10)  
+ - E.g. 1011 -> (1 * 2^3) + (0 * 2^2) + (1 * 2^1) + (1 * 2^0) = 11 (base 10)  
  - Binary representes: Numbers/Characters/Image/Sound/Instruction.  
 
 3. Hexadecimal system  
