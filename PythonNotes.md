@@ -30,7 +30,7 @@ Types of variables:
 - tuple → unchangeable list ((1, 2, 3))  
 - dict → key–value pairs ({"a": 1})  
 - set → unordered unique values ({1, 2, 3})  
-  
+- You can make a list with the list data type and a range, e.g. print(list(range(5)))
 Displaying 2 different variable together:  
 - print(f"Weight: {weight_text}")  
 |-> Concatenation, must have the 'f' before the quote in order to join 2 variables to print. this text joins the text "Weight: " with the variable {weight_text}.  
@@ -53,6 +53,7 @@ for i in range(0,n):
     numberlist.append(rand)
 print(numberlist)
 ```
+- You can use the functions .upper() and .lower() in order to make words/letter upper and lower case.
 ***
 Arrays/Lists:  
 ```
@@ -61,7 +62,7 @@ fruits = ["apple" , "banana" , "cherry", "mango", "kiwi"]
 - If you want an empty list than just make: fruits = []
 |-> This is an array, variable containing multiple variables.  
 |-> They are base 0, meaning the first value is 0, then 1, then 2, etc...  
-|-> e.g. fruits = [0] == apple  
+|-> e.g. fruits = [0] == apple  + print(fruits[0]) prints apple too.
 |-> I can also set it to: fruits = [i], then, i = 0 and it does that same.  
 |-> print(fruits[1:3]) -> this will list all from position 1 to 2  -> it gets up to but doesn't include the 3rd value.  
 |-> print(fruits[:3]) -> this will list from position 0 (start) to 3.  -> it gets up to but doesn't include the 3rd value.  
@@ -72,7 +73,8 @@ fruits = ["apple" , "banana" , "cherry", "mango", "kiwi"]
 	animals = ['lion', 'caterpillar', 'elephant']  
 	animals.append('bee')  
 //Then when you print// ['lion', 'caterpillar', 'elephant', 'bee']
-- len(list): Find the number of items in a list  
+- len(list): Find the number of items in a list
+|-> You can use print(len('abc'))  to find the number of letters within a string (spaces count).
 - min(list), max(list): Find the minimum/maximum value in a list of numbers
 - sum(list): Calculate the sum of all the values in a list of numbers
 - separator.join(list): join all the elements in a list together with a specified separator.  
@@ -122,6 +124,19 @@ while password != 'valid':
         print("Not a valid password.")
 print("Welcome back!")
 ```
+- We can use the function: countdown.sort(reverse=True) to reverse the order of a list.
+- Or use it normally to sort the list from lowest to highest: countdown.sort().
+- To print a list without the brackets or commas you can use the unpacking operator '*', e.g.
+```
+my_list = ['apple', 'banana', 'cherry']
+print(*my_list)
+```
+|-> This prints: apple banana cherry -> Still has spaces
+- To join items in a list back together and print them you can use the '.join' function:
+```
+fullword = "".join(list)
+```
+- In this case we create a new variable to store the joined version of the list name 'list'. Plus we join it where there are " " in the list.
 
 Tuples:  
 - A tuple is like a list but with a few differences, it cannot be changed after creation and uses () brackets.
@@ -246,6 +261,7 @@ while i < len(colours):
 ```
 - This will go through the entire list and print each colour (remember that all this sentence MUST be in lower case ofr syntax)ntto
 - For loops: 
+- The variable 'i' in the statement, for i in range, recieves the value of all the numbers from the range one by one and runs it throught the set code below it.
 ```
 for variable in iterable:
 ```
@@ -292,3 +308,39 @@ for i in range(5):
 for i in [0, 1, 2, 3, 4]:
     print(i)
 ```
+- You can use range to output more than numbers, e.g. I wanted to print the word hello a set amount of times:
+```
+for i in range(3):
+    print('Hello!')
+```
+- When using list positions and ranges, remember that ranges go from 0 to the number before the end. But lists go from 0 to whatever. This means that if we had: 'for i in range(len(itemslist)):' This would still go to the end of the list because lists start at 0 not 1.
+- You are also able to put If/Elif/Else conditionals inside 'for loops'.
+- You can do a loop in many different ways, here is the same loop done with a 'for' statement and a 'while' statement.  
+While:
+```
+i = 0
+while i < 5:
+    print(i) 
+    i = i + 1
+```
+- You can do the same for list ranges as well:
+```
+colours = ['red', 'green', 'blue', 'yellow']
+i = 0
+while i < len(colours):
+    print(colours[i]) 
+    i = i + 1
+```
+```
+colours = ['red', 'green', 'blue', 'yellow']
+for i in range(len(colours)):
+    print(colours[i])
+```
+- The reason that it still prints all of the items in the list depite only going to the length (which should be one less than the value) is because the list values start from [0].
+- You can nest loops inside of other loops, the loop inside of the other will run until complete and then the loop covering it will proceed onto the next value and so forth, e.g.
+```
+for i in range(1, 13):
+    for j in range(1, 13):
+        print('{} x {} = {}'.format(i, j, i*j))
+```
+- 
