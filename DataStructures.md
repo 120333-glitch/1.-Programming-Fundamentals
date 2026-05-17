@@ -74,12 +74,14 @@
 
   => Aaron
   ```
-
+- "Attributes are the characteristics. Methods are the things it does."
 
 7. Data Structures of arrays, tree, records and sequential files:
  - 
 
 ***
+***
+
 Modules:  
 - Python comes made with a library of modules called the 'Standard Library'. This contains a set of modules which give you access to many useful functions. E.g. print() allows us to display information to the screen. int(), float(), str() and list() allow us to convert between variable types. len(), min(), max(), sum() allows us to find the length, minimum, maximum and sum of a list.
 - You will need to install other packages with 'pip', you can easilyy install these packages on your machine by looking up packages with the Python Package Index.
